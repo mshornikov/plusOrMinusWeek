@@ -52,7 +52,7 @@ function getWeekType(firstSep, day) {
 // Content on start
 window.onload = () => {
     const today = new Date();
-    console.log(today.toString());
+    // console.log(today.toString());
     getWeekType(getFirstSep(today), today);
     output.innerHTML = output.dataset.status;
 }
@@ -60,7 +60,7 @@ window.onload = () => {
 // Updating status
 setInterval(() => {
     const today = new Date();
-    console.log(today.toString());
+    // console.log(today.toString());
     getWeekType(getFirstSep(today), today);
     output.innerHTML = output.dataset.status;
     
